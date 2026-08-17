@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Weather App</h1>
+
+        <form id="weather-form">
+          <input
+            type="text"
+            id="location-input"
+            placeholder="Enter a city"
+            required
+          />
+
+          <button type="submit">Search</button>
+        </form>
+      </header>
+
+      <div id="loading" class="hidden">Loading...</div>
+
+      <div id="error" class="hidden"></div>
+
+      <main id="weather-container" class="hidden">
+        <section class="weather-card">
+          <h2 id="location"></h2>
+
+          <div class="weather-main">
+            <div>
+              <p id="temperature"></p>
+              <p id="condition"></p>
+            </div>
+
+            <div id="weather-icon"></div>
+          </div>
+
+          <div class="weather-details">
+            <p>
+              Feels like:
+              <span id="feels-like"></span>
+            </p>
+
+            <p>
+              Humidity:
+              <span id="humidity"></span>
+            </p>
+
+            <p>
+              Wind:
+              <span id="wind"></span>
+            </p>
+          </div>
+
+          <div class="unit-buttons">
+            <button id="celsius-btn" type="button">°C</button>
+
+            <button id="fahrenheit-btn" type="button">°F</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
